@@ -1,0 +1,72 @@
+.login-form{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	height: 50vh;
+}
+
+
+#login-btn{
+	display: inline-block;
+    padding: 12px 24px;
+    background-color: #BD6BFA;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.loginform-group input{
+    width: 80%;
+    padding: 12px;
+    border: none;
+	margin-bottom: 10px;
+    background-color: rgb(227, 226, 226);
+    color: #333;
+    animation: fade 2s ease-in-out ;
+}
+
+.loginform-group input:focus,
+.loginform-group textarea:focus {
+    /* outline: none; */
+    box-shadow: 0 0 8px #bbb;
+}
+
+#login-btn{
+    width: 80%;
+    animation: fade 2s ease-in-out;
+}
+
+.login-form p{
+margin-top: 12px;
+
+}
+.login-form a{
+text-decoration: none;
+color: #BD6BFA;
+font-size: 15px;
+cursor: pointer;
+}
+
+#toggle-btn{
+    background-color: transparent;
+    cursor: pointer;
+    color: #BD6BFA;
+    border: none;
+    margin-left: 5px;
+    animation: fade 2s ease-in-out;
+
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

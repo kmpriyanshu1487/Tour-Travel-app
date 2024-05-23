@@ -1,0 +1,135 @@
+.reviewData-container-main {
+   background-color: rgb(234, 233, 233);
+    height: 75vh;
+}
+
+.reviewData-container {
+    width: 70%;
+    margin: auto;
+
+}
+
+.reviewData-container h1 {
+    font-size: 3rem;
+    animation: fade 2s ease-in-out;
+    
+}
+
+.cards-main {
+    margin: 20px;
+}
+
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    height: 330px;
+    border: 1px solid rgb(232, 232, 232);
+    color: #000;
+    border-radius: 10px;
+    animation: fade 2s ease-in-out;
+}
+
+.reviewData-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #BD6BFA;
+}
+
+.reviewData-img img {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+}
+
+.reviewData-desc h3 {
+    color: gray;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.reviewData-desc p {
+    padding: 10px;
+    font-size: 13px;
+}
+
+.slider {
+    color: #000;
+}
+
+@media screen and (max-width:320px) {
+    .reviewData-container h1 {
+        font-size: 23px;
+    }
+    .reviewData-desc h3 {
+        font-size: 13px;
+        padding: 0;
+    }
+
+    .reviewData-desc p {
+        font-size: 12px;
+        padding: 3px;
+    }
+    .cards{
+        height: 200px;
+    }
+    .reviewData-img img {
+        border: 2px solid #fff;
+        border-radius: 50%;
+        background-color: #fff;
+        height: 90px;
+        width: 100px;
+    }
+   
+
+
+}
+@media screen and (max-width:556px) {
+    .reviewData-container-main {
+         height: 70vh;
+     }
+    .reviewData-container-main h1 {
+        font-size:25px;
+    }
+    .reviewData-desc h3 {
+        font-size: 13px;
+        padding: 0;
+    }
+}
+@media screen and (max-width:850px) {
+    .reviewData-container-main {
+         height: 45vh;
+     }
+    .reviewData-container-main h1 {
+        font-size:25px;
+        margin-top: 10px;
+    }
+    .reviewData-desc h3 {
+        font-size: 13px;
+        padding: 0;
+    }
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

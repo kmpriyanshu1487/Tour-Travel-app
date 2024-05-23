@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-position: center;
+    flex-direction: row;
+    background-color: #f0e6f8;   
+}
+
+
+.container img {
+    filter: blur(10px);
+}
+.faq-main{   
+    min-height: 80vh;
+    margin: 10px auto;
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    animation: fade 2s ease-in-out;
+}
+.faq-main h2{
+    border-bottom: 2px solid #000;
+    
+}
+
+.title{
+    font-size: 3rem;
+    margin: 2rem 0rem;
+}
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px solid rgb(222, 218, 218);
+    cursor: pointer;
+}
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.question h3{
+    font-size: 20px;
+    font-weight: 300;
+    animation: fade 2s ease-in-out;
+    color: #000;
+    
+ }
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+.answer p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 15px;
+    text-align: left;
+}
+
+
+.faq.active .answer{
+    max-height: 300px;
+    animation: fade 2s ease-in-out;
+}
+
+.faq.active i{
+    transform: rotate(180deg);
+}
+.faq .question i{
+    transition: transform .5s ease-in;
+}
+.faq-main-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: blur(2px);
+}
+.faq-main-img img{
+    height: 50%;
+    width: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+span{
+    color: #000;
+}
+
+@media screen and (max-width:554px){
+   
+    
+}
+@media screen and (max-width:850px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .faq-main-img{
+        display: none;
+    }
+    .faq-main-img img{
+        height: 50vh;
+        width: 100%;
+        
+       
+    }
+    .faq-main{
+   width: 40vh;
+    }
+    .faq-main h2 {
+        margin: 0;
+    }
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

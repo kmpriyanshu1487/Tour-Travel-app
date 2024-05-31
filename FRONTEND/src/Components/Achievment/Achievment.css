@@ -1,7 +1,3 @@
-.achievment-container {
-    height: 60vh;
-}
-
 .achievment-container h1 {
     font-size: 3rem;
     margin-top: 20px;
@@ -14,9 +10,7 @@
     margin-right: 40px;
     justify-content: space-around;
     grid-template-columns: repeat(4, 1fr);
-    flex-direction: row;
-    margin-top: 25px;
-    padding: 10px;
+    margin-bottom: 10px;
 
 }
 
@@ -28,63 +22,52 @@
     height: 200px;
     padding: 14px;
     margin: 5px;
-    background-color: #f3e7fb;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #d5d5d5;
 
 }
 
-.achievment-card:hover {
-    box-shadow: 4px 4px 8px 8px #DAAAFD;
-    transition: .3s ease-in;
-
-}
 
 .achievment-card p {
     font-size: 1rem;
     animation: fade 2s ease-in-out;
 }
 @media screen and (max-width:320px) {
-    .achievment-container {
-        height: 50vh;
-    }
-    .achievment-container h1 {
-        margin-bottom: 0;
-        margin-top: 10px;
-        font-size: 1.4rem;
-    }
-    .achievment-card {
-        width: 103px;
-        height: 100px;
-    }
-
-    .achievment-card h2 {
-        font-size: 20px;
-    }
-
-    .achievment-card p {
-        font-size: 10px;
-    }
-
-    .achievment-container h1 {
-
-        font-size: 1.6rem;
+    .achievment-container{
+        display: none;
     }
 }
-@media screen and (max-width:556px) {
+@media screen and (max-width:380px) {
+    .achievment-container{
+        display: none;
+    }
+}
+@media screen and (max-width:540px) {
     .achievment-container {
         height: 80vh;
+    }
+    .achivement-main{
+        grid-template-columns: repeat(2,1fr);
     }
    
 }
 
 @media screen and (max-width:850px) {
     .achivement-main {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     .achievment-container h1 {
         font-size: 1.6rem;
     }
+    .achievment-card  h2{
+        font-size: 1rem;
+        color: rgb(181, 178, 178);
 
+    }
+    .achievment-card  p{
+        font-size: .8rem;
+        color: rgb(169, 169, 169);
+
+    }
 }
 
 @keyframes fade {

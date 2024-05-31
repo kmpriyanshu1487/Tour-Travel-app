@@ -9,7 +9,7 @@ import LoginSignup from "./Components/Signup_Login/LoginSignup"
 import CarTypes from './Pages/CarTypes/CarTypes'
 import FAQ from "./Routes/FAQ";
 import Booking from "./Routes/Booking";
-
+import VehicleCard from './Pages/vehicleCard/vehicleCard';
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
         <Route path="/login" element={<LoginSignup/>}/>
         <Route path="/carTypes" element={<CarTypes/>}/>
         <Route path="/booking" element={<Booking/>}/>
+        <Route path="/vehiclecard" element={<VehicleCard/>}/>
       </Routes>
       
     </div>

@@ -8,7 +8,7 @@
 #login-btn{
 	display: inline-block;
     padding: 12px 24px;
-    background-color: #BD6BFA;
+    background-color: #41B06E;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -24,12 +24,11 @@
 	margin-bottom: 10px;
     background-color: rgb(227, 226, 226);
     color: #333;
-    animation: fade 2s ease-in-out ;
+    animation: fade 1s ease;
 }
 
 .loginform-group input:focus,
 .loginform-group textarea:focus {
-    /* outline: none; */
     box-shadow: 0 0 8px #bbb;
 }
 
@@ -44,7 +43,7 @@ margin-top: 12px;
 }
 .login-form a{
 text-decoration: none;
-color: #BD6BFA;
+color: #41B06E;
 font-size: 15px;
 cursor: pointer;
 }
@@ -52,7 +51,7 @@ cursor: pointer;
 #toggle-btn{
     background-color: transparent;
     cursor: pointer;
-    color: #BD6BFA;
+    color: #41B06E;
     border: none;
     margin-left: 5px;
     animation: fade 2s ease-in-out;

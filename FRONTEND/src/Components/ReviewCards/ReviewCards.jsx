@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// Assuming reviewData is defined in the same file or imported from another file
+
 const reviewData = [
   {
     name: 'John Doe',
@@ -62,6 +62,13 @@ const ReviewCards = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
         }
+      },
+      {
+        breakpoint: 320, // mobile breakpoint
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
       }
     ]
   };
@@ -69,8 +76,8 @@ const ReviewCards = () => {
   return (
     <div className="reviewData-container-main">
       <div className='reviewData-container'>
-        <h1>Our Top Reviews</h1>
         <div className="cards-main">
+        <h1>Our Top Reviews</h1>
           <Slider {...settings} >
             {reviewData.map((review, index) => (
               <div className='cards' key={index}>

@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import Aos from 'aos';
 import './Faq.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 const FAQ = () => {
+    useEffect(() => {
+        Aos.init();
+    }, []);
 
-    const faq = [{
+    const faq = [
+        {
             Ques: 'How do I book a tour?',
             Ans: `Booking a tour is easy! Simply navigate to our website and select the tour package you're interested in. Follow the prompts to choose your preferred dates, number of participants, and any additional options. Once you've completed the booking process, you'll receive a confirmation email with all the details.`
         },
@@ -32,15 +37,15 @@ const FAQ = () => {
     return (
         <div className="container">
             <div className='faq-main'>
-                <h2 className='title'>FAQs</h2>
+                <h2 className='title'>FAQs <span></span></h2>
                 {faq.map((item, index) => (
                     <div className={`faq ${activeIndex === index ? 'active' : ''}`} key={index} onClick={() => toggleActive(index)}>
-                        <div className="question">
-                            <h3>Question: {item.Ques}</h3>
+                        <div className="question" >
+                            <h3 data-aos='fade-left'>Question: {item.Ques}</h3>
                             <FontAwesomeIcon icon={faAngleDown} />
                         </div>
-                        <div className="answer">
-                            <p>{item.Ans}</p>
+                        <div className="answer" >
+                            <p data-aos='fade-left'>{item.Ans}</p>
                         </div>
                     </div>
                 ))}

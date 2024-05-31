@@ -5,7 +5,10 @@ import jammuImg from '../../Assests/j&k.jpg'
 import TripData from '../TripData/TripData'
 import './Trip.css'
 
+
 const Trip = () => {
+
+   
     return (
         <div className='trip'>
             <h1>Recent Trip</h1>
@@ -27,7 +30,7 @@ const Trip = () => {
                 <TripData
                     img={jammuImg}
                     heading="Trip to Kashmir"
-                    text="Embark on an enchanting odyssey to Kashmir, a paradise on Earth. Traverse through picturesque valleys, adorned with blooming saffron fields and meandering rivers. Marvel at the majestic snow-capped peaks, cruise on tranquil lakes, and embrace the warm hospitality. Discover a land of timeless beauty and cultural richness at every turn."
+                    text="Embark on an enchanting odyssey to Kashmir, a paradise on Earth. Traverse through picturesque valleys, adorned with blooming saffron fields and meandering rivers. Marvel at the majestic snow-capped peaks, cruise on tranquil lakes, and embrace the warm hospitality. Discover a land of timeless beauty and cultural richness at every turn. "
 
                 />
             </div>

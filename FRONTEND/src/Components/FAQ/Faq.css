@@ -15,7 +15,7 @@
     
     background-position: center;
     flex-direction: row;
-    background-color: #f0e6f8;   
+    background-color: #e8eae9;   
 }
 
 
@@ -36,7 +36,6 @@
     border-bottom: 2px solid #000;
     
 }
-
 .title{
     font-size: 3rem;
     margin: 2rem 0rem;
@@ -56,9 +55,9 @@
 }
 .question h3{
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 600;
     animation: fade 2s ease-in-out;
-    color: #000;
+    color: #908c8c;
     
  }
 .answer{

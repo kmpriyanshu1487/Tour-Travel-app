@@ -23,7 +23,7 @@
 }
 
 .upper-row i:hover {
-    color: #BD6BFA;
+    color: #41B06E;
     transition: .3s ease-in-out;
     transform: scale(1.1);
 }
@@ -50,6 +50,11 @@
     animation: fade 2s ease-in-out;
 }
 
+.lower-row i{
+    margin: 8px;
+    color: #41B06E;
+}
+
 .upper-row-left{
     display: flex;
     align-items: start;
@@ -57,7 +62,7 @@
     flex-direction: column;
 }
 .upper-row-left h1{
-   color: #DAAAFD;
+   color: #45bf78;
 }
 .lower-row h4 {
     font-size: 20px;
@@ -75,9 +80,9 @@
     
 }
 .lower-row a:hover {
-   color: #BD6BFA;
-   transform: scale(1.1);
-   transition: .5s ease-in-out;
+   color: #41B06E;
+   transform: scale(1.08);
+   transition: .2s ease-in-out;
 }
 @media screen and (max-width:850px){
     .footer{

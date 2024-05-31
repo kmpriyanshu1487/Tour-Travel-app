@@ -1,7 +1,13 @@
 import React, { useEffect } from 'react';
 import './Achievment.css';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const Achievment = () => {
+
+    useEffect(()=>{
+Aos.init();
+    },[])
+
 
     useEffect(() => {
         const counts = document.querySelectorAll('.count');
@@ -32,21 +38,21 @@ const Achievment = () => {
 
     return (
         <div className='achievment-container'>
-            <h1>Our Achievement</h1>
+            <h1 >Our Achievement</h1>
             <div className="achivement-main">
-                <div className="achievment-card counter">
+                <div className="achievment-card counter"   data-aos='fade-right'>
                     <h2 className='count' data-target='4026'>0</h2>
                     <p>Active Member</p>
                 </div>
-                <div className="achievment-card counter">
+                <div className="achievment-card counter"   data-aos='fade-down'>
                     <h2 className='count' data-target='2036'>0</h2>
                     <p>Car Color</p>
                 </div>
-                <div className="achievment-card counter">
+                <div className="achievment-card counter"  data-aos='fade-up'>
                     <h2 className='count' data-target='5062'>0</h2>
                     <p>Car Model</p>
                 </div>
-                <div className="achievment-card counter">
+                <div className="achievment-card counter"  data-aos='fade-left'>
                     <h2 className='count' data-target='500'>0</h2>
                     <p>Positive Rating</p>
                 </div>

@@ -41,6 +41,7 @@ const Bookings = () => {
                     <input type="text" id="contact" name="contact" placeholder="Contact Number" onChange={handleChange} /><br />
                     <input id="address" name="address" placeholder="Address" onChange={handleChange} /><br />
                     <input type="text" id="vehicleCode" name="vehicleCode" placeholder="Vehicle Code" onChange={handleChange} /><br />
+                    <input type="text" id="state" name="state" placeholder="Destination state" onChange={handleChange} /><br />
                     <textarea id="message" name="message" placeholder='Your Message'  onChange={handleChange} /><br />
                     <label htmlFor="screenshot">Upload Screenshot of Payment:</label><br />
 

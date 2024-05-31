@@ -6,7 +6,6 @@ import Trip from '../Components/Trips/Trip';
 import Footer from '../Components/Footer/Footer';
 import SelectionCriteria from '../Components/SelectionCriteria/SelectionCriteria';
 import Achievment from '../Components/Achievment/Achievment';
-import ReviewCards from '../Components/ReviewCards/ReviewCards';
 
 
 const Home = () => {
@@ -50,7 +49,6 @@ const Home = () => {
       <SelectionCriteria />
       <Distination />
       <Trip />
-    <ReviewCards/>
       <Achievment />
       <Footer />
     </>

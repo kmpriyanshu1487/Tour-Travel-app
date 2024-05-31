@@ -1,6 +1,7 @@
 .distination{
     margin: 4rem 6rem;
     animation: fade 2s ease-in-out;
+    
 }
 
 .distination h1{
@@ -33,10 +34,12 @@
 .desc-text h2{
  padding-bottom: 1rem;
  animation: fade 2s ease-in-out;
+ color: #9f9b9b;
 
 }
-.desc-text p{
- font-size: 13px;
+.desc-text p {
+    font-size: 15px;
+    text-align: justify;
 }
 
 .image{

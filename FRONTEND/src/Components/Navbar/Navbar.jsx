@@ -27,7 +27,7 @@ useEffect(()=>{
         {MenuItems.map((item, index) => (
           <li key={index}>
             <Link className={item.cName} to={item.url}>
-              <i className={item.icon} data-aos='fade-bottom'></i>{item.title}
+              <i className={item.icon}></i>{item.title}
             </Link>
           </li>
         ))}

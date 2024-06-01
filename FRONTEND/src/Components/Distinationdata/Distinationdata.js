@@ -12,12 +12,12 @@ useEffect(()=>{
   return (
     <div className={props.className}>
       <div className="desc-text">
-        <h2 data-aos='fade-right'>{props.heading}</h2>
+        <h2 data-aos='fade-up'>{props.heading}</h2>
         <p data-aos='fade-up'>{props.text}</p>
       </div>
-      <div className="image" data-aos='fade-left'>
-        <img src={props.img1} alt="img" />
-        <img src={props.img2} alt="img" />
+      <div className="image" >
+        <img data-aos='fade-up' src={props.img1} alt="img" />
+        <img data-aos='fade-up' src={props.img2} alt="img" />
       </div>
     </div>
   );

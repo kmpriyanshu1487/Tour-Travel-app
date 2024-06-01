@@ -10,13 +10,12 @@ const TripData = (props) => {
 
   return (
     <div className="t-card">
-      <div className="t-image" data-aos='fade-left'>
-        <img src={props.img} alt="img" />
-        
+      <div className="t-image" >
+        <img src={props.img} alt="img" data-aos='fade-up'/>
       </div>
-      <h4 data-aos='fade-right'>{props.heading}</h4>
+      <h4 data-aos='fade-up'>{props.heading}</h4>
       <p data-aos='fade-up'>{props.text}</p>
-      <button data-aos='fade-down'>View more</button>
+      <button data-aos='fade-up'>View more</button>
     </div>
   );
 };

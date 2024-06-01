@@ -90,7 +90,8 @@ border: 1px solid #41B06E;
         
         flex-direction: column;
     }
-    .t-card{
+    .t-card {
+        height: 531px;
         width: 100%;
         margin-bottom: 1.5rem;
     }

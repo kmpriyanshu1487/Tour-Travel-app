@@ -40,7 +40,7 @@ const Achievment = () => {
         <div className='achievment-container'>
             <h1 >Our Achievement</h1>
             <div className="achivement-main">
-                <div className="achievment-card counter" > data-aos='fade-up'
+                <div className="achievment-card counter" >
                     <h2 className='count' data-target='4026' data-aos='fade-up'>0</h2>
                     <p data-aos='fade-up'>Active Member</p>
                 </div>

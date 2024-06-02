@@ -17,7 +17,9 @@ const Hero = (props) => {
           <h1 >{props.title}</h1>
           <p >{props.text}</p>
           <a href={props.url} className={props.btnClass} >{props.buttonText}  <i class="fa fa-arrow-right" aria-hidden="true"  ></i></a>
+         
         </div>
+        
 
       </div>
     </>

@@ -65,7 +65,7 @@ img {
     font-size: 1.3rem;
     color: #000;
     animation: fade 1s ease;
-    padding: .5rem 0 2rem 0;
+    padding: .3rem 0 1rem 0;
 
 
 }
@@ -82,6 +82,7 @@ img {
     letter-spacing: 2px;
     border: 1px solid #5e5d5d;
     color: #fff;
+   
 }
 
 .hero-text .show:hover {

@@ -13,7 +13,7 @@ const FAQ = () => {
         cName="hero-mid"
         heroImg={FeedImg}
         title="FAQ"
-        text="Frequently asked questions"
+        text="I don’t pretend we have all the answers. But the questions are certainly worth thinking about."
         buttonText=""
         btnClass="hide"
       />

@@ -96,13 +96,13 @@ const LoginSignup = () => {
                 <input type="text" name='name' value={formData.name} onChange={changeHandler} placeholder='Your Name' />
               </div>
             )}
-            <div className="loginform-group">
+            <div className="loginform-group" data-aos='fade-up' data-aos-duration="1000">
               <input type="email" name='email' value={formData.email} onChange={changeHandler} placeholder='Your Email' />
             </div>
-            <div className="loginform-group">
+            <div className="loginform-group" data-aos='fade-up' data-aos-duration="1200">
               <input type="password" name='password' value={formData.password} onChange={changeHandler} placeholder='Your Password' />
             </div>
-            <button id='login-btn' type='submit' onClick={() => state === "Login" ? login() : signup()}>{state}</button>
+            <button data-aos='fade-up' data-aos-duration="1250" id='login-btn' type='submit' onClick={() => state === "Login" ? login() : signup()}>{state}</button>
           </form>
           <p>
             {state === "Login" ? "Not registered?" : "Already registered?"}

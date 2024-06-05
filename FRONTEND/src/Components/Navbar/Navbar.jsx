@@ -6,22 +6,30 @@ import Aos from 'aos';
 import 'aos/dist/aos.css'
 
 const Navbar = () => {
+  const [clicked, setClicked] = useState(false); // Define the 'clicked' state variable
 
-useEffect(()=>{
-  Aos.init();
-},[])
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
-  const [clicked, setClicked] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('authToken'));
 
-  const handleClick = () => {
+  const handleLogout = () => {
+    localStorage.removeItem('authToken');
+    setIsLoggedIn(false);
+    window.location.replace('/home');
+  };
+
+  const handleClick = () => { // Define the handleClick function
     setClicked(!clicked);
   };
 
   return (
     <nav className='navbar-items'>
-      <h1 className='navbar-logo'>EXPLORER</h1>
+      <div className="nav-logo"><h1 className='navbar-logo'>EXPLORER </h1><p data-aos='fade-up' data-aos-duration='1000'>For Booking:-9140884957</p></div>
+      
       <div className="hamburger" onClick={handleClick}>
-        <i  className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
+        <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
       <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
         {MenuItems.map((item, index) => (
@@ -32,8 +40,8 @@ useEffect(()=>{
           </li>
         ))}
         <li>
-          {localStorage.getItem('auth-Token') ? (
-            <button onClick={() => { localStorage.removeItem('auth-token'); window.location.replace('/home'); }}>
+          {isLoggedIn ? (
+            <button id='nav-btn' onClick={handleLogout}>
               Logout
             </button>
           ) : (

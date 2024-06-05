@@ -68,7 +68,7 @@ const ContactUs = () => {
                 placeholder="Your Name"
                 value={formData.name}
                 onChange={handleChange}
-                data-aos="fade-right"
+                data-aos="fade-up" data-aos-duration="1000"
               />
             </div>
             <div className="form-group">
@@ -78,7 +78,8 @@ const ContactUs = () => {
                 placeholder="Your Email"
                 value={formData.email}
                 onChange={handleChange}
-                data-aos="fade-left"
+                data-aos="fade-up"
+                data-aos-duration="1200"
               />
             </div>
             <div className="form-group">
@@ -87,7 +88,8 @@ const ContactUs = () => {
                 placeholder="Your Message"
                 value={formData.message}
                 onChange={handleChange}
-                data-aos="fade-right"
+                data-aos="fade-up"
+                data-aos-duration="1400"
               ></textarea>
             </div>
             <button id="contact-btn" type="submit" data-aos="fade-up" disabled={submitting}>
@@ -96,17 +98,17 @@ const ContactUs = () => {
             {submitError && <p className="error-message">{submitError}</p>}
           </form>
           <h3>Contact Information</h3>
-          <p data-aos="fade-right">
+          <p data-aos="fade-up">
             <i className="fa fa-phone"></i>9140884957
           </p>
-          <p data-aos="fade-left">
+          <p data-aos="fade-up">
             <i className="fa fa-envelope"></i>kmpriyanshu741@gmail.com
           </p>
-          <p data-aos="fade-right">
+          <p data-aos="fade-up">
             <i className="fa fa-map-marker"></i>123, Street Name, City, Country
           </p>
         </div>
-        <div className="contact-info" data-aos="fade-left">
+        <div className="contact-info" data-aos="fade-up">
           <iframe
             title="Google Maps"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1650.6549376079474!2d83.58618257650734!3d26.64434809160149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991600488abdc71%3A0x13b9d7e1735cfa1f!2s18%2C%20Tehsil%20Road%2C%20Chauri%20Chaura%2C%20Dumari%20Khurd%2C%20Uttar%20Pradesh%20273201%2C%20India!5e0!3m2!1sen!2sus!4v1714833756816!5m2!1sen!2sus"

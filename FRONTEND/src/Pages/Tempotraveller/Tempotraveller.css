@@ -1,0 +1,48 @@
+.tempo-container{
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid rgb(172, 170, 170);
+padding: 10px;
+margin: 130px;
+}
+.tempo-imgs{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2,2fr);
+    
+  
+    margin: 10px 50px;
+    padding:  10px 20px;
+}
+.tempo-imgs div{
+    margin: 8px ;
+    padding: 5px;
+}
+.img{
+    height: 270px;
+    width: 300px;
+}
+.tempo-details{
+    
+    text-align: justify;
+    
+}
+#tempo-btn{
+    border: none;
+    color: #fff;
+    background-color: #41B06E;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#tempo-btn:hover{
+    background-color: #45bf78;
+    transition: .3s ease-in;
+    
+
+}

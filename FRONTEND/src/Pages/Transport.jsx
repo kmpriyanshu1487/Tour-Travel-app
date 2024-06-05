@@ -15,24 +15,26 @@ const Transport = () => {
   return (
     <>
       <div className="trans-container">
-        <div className='trans-card' data-aos='fade-right'>
+        <div className='trans-card' data-aos='fade-up' data-aos-duration="1000">
           <h2>Tempo Traveller</h2>
           <img src={tempoTraveler} alt="img" />
-          <button id='trans-btn'>See Details <i className='fa-solid fa-angles-right'></i> </button>
+          <Link to='/tempotraveller'>
+          <button id='trans-btn' >See Details <i className='fa-solid fa-angles-right'></i> </button>
+          </Link>
         </div>
-        <div className='trans-card' data-aos='fade-down'>
+        <div className='trans-card' data-aos='fade-up' data-aos-duration="1200">
           <h2>Car for Rental</h2>
           <img src={carImg} alt="img" />
           <Link to='/carTypes'>
             <button id='trans-btn'>See Details<i className='fa-solid fa-angles-right'></i> </button>
           </Link>
         </div>
-        <div className='trans-card' data-aos='fade-up'>
+        <div className='trans-card' data-aos='fade-up' data-aos-duration="1400">
           <h2>Bus for Rental</h2>
           <img src={busImg} alt="img" />
           <button id='trans-btn'>See Details<i className='fa-solid fa-angles-right'></i> </button>
         </div>
-        <div className='trans-card' data-aos='fade-left'>
+        <div className='trans-card' data-aos='fade-up' data-aos-duration="1600">
           <h2>Package Tour</h2>
           <img src={busImg} alt="img" />
           <button id='trans-btn'>See Details<i className='fa-solid fa-angles-right'></i> </button>

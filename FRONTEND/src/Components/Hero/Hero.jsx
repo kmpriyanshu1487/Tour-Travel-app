@@ -15,7 +15,7 @@ const Hero = (props) => {
         <img id='heroImg-main' src={props.heroImg} alt="heroImg" />
         <div className="hero-text">
           <h1 >{props.title}</h1>
-          <p >{props.text}</p>
+          <p className='hero-para' >{props.text}</p>
           <a href={props.url} className={props.btnClass} >{props.buttonText}  <i class="fa fa-arrow-right" aria-hidden="true"  ></i></a>
          
         </div>

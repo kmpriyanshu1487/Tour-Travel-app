@@ -27,7 +27,10 @@ code {
 .slick-slide>div {
   margin: 0 10px;
 }
-
+.comments{
+  font-weight: 400;
+  font-size: 18px;
+}
 /* @media(prefers-reduced-motion) {
   .hidden {
     transition: none;

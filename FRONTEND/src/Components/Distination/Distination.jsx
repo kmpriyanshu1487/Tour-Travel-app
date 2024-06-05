@@ -9,7 +9,7 @@ const Distination = () => {
     return (
         <div className='distination'>
             <h1>Popular Distination</h1>
-            <p>Some of Our Popular Destination To Explore The India
+            <p className='comments'>Some of Our Popular Destination To Explore The India
 
             </p>
             <Distinationdata className="first-des"

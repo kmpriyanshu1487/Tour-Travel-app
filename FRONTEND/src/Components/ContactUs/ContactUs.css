@@ -46,7 +46,7 @@
     padding: 10px;
     margin: 5px;
     width: 100%;
-    animation: fade 1s ease;
+     
 }
 
 .form-group input:focus,
@@ -127,7 +127,7 @@
         margin: 8px;
     }
 }
-
+/* 
 @keyframes fade {
     from {
         opacity: 0;
@@ -139,4 +139,4 @@
         opacity: 1;
         transform: translateY(0px);
     }
-}
+} */

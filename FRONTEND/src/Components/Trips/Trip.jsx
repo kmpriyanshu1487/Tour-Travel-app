@@ -11,8 +11,8 @@ const Trip = () => {
    
     return (
         <div className='trip'>
-            <h1>Recent Trip</h1>
-            <p>some of our famous trips</p>
+            <h1 id='trip-heading'>Recent Trip</h1>
+            <p className='comments'>Some of our famous trips</p>
 
             <div className="trip-card">
                 <TripData

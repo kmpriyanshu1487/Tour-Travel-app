@@ -14,8 +14,8 @@ const TripData = (props) => {
         <img src={props.img} alt="img" data-aos='fade-up'/>
       </div>
       <h4 data-aos='fade-up'>{props.heading}</h4>
-      <p data-aos='fade-up'>{props.text}</p>
-      <button data-aos='fade-up'>View more</button>
+      <p className='trip-desc' data-aos='fade-up'>{props.text}</p>
+      <button>View more</button>
     </div>
   );
 };

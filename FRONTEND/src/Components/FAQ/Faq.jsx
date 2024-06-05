@@ -41,11 +41,11 @@ const FAQ = () => {
                 {faq.map((item, index) => (
                     <div className={`faq ${activeIndex === index ? 'active' : ''}`} key={index} onClick={() => toggleActive(index)}>
                         <div className="question" >
-                            <h3 data-aos='fade-left'>Question: {item.Ques}</h3>
+                            <h3 data-aos='fade-up'>Question: {item.Ques}</h3>
                             <FontAwesomeIcon icon={faAngleDown} />
                         </div>
                         <div className="answer" >
-                            <p data-aos='fade-left'>{item.Ans}</p>
+                            <p data-aos='fade-up'>{item.Ans}</p>
                         </div>
                     </div>
                 ))}
